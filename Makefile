@@ -3,6 +3,9 @@ CARGO=cargo
 all: clean
 	@$(CARGO) run
 
+run:
+	@$(CARGO) run
+
 build:
 	@$(CARGO) build
 

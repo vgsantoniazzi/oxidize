@@ -17,7 +17,6 @@ pub fn _print(args: fmt::Arguments) {
     super::screen::WRITER.lock().write_fmt(args).unwrap();
 }
 
-
 impl fmt::Write for super::screen::Screen {
     fn write_str(&mut self, s: &str) -> fmt::Result {
         self.write_string(s);

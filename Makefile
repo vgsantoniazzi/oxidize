@@ -20,6 +20,5 @@ format:
 	@$(CARGO) fmt
 
 ci:
-	@$(CARGO) clippy -- -Dwarnings
 	@$(CARGO) fmt -- --check
-	@$(CARGO) test
+	@$(CARGO) build

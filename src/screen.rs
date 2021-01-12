@@ -1,6 +1,6 @@
-use spin::Mutex;
-use lazy_static::lazy_static;
 use core::fmt;
+use lazy_static::lazy_static;
+use spin::Mutex;
 
 // Define the screen size as
 // 80 columns x per 25 lines

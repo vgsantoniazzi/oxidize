@@ -3,8 +3,8 @@
 
 use core::panic::PanicInfo;
 
-mod screen;
 mod macros;
+mod screen;
 
 #[no_mangle]
 pub extern "C" fn _start() -> ! {

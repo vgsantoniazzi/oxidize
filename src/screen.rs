@@ -7,6 +7,7 @@ use core::fmt;
 // We are managing the VGA buffer
 const BUFFER_HEIGHT: usize = 25;
 const BUFFER_WIDTH: usize = 80;
+
 // Public interface screen
 // Use this struct and implementation
 // to control screen data and manipulate
@@ -30,7 +31,7 @@ lazy_static! {
 }
 
 impl Screen {
-    // To implement macro write!
+    // To implement macro `write!`
     #[allow(dead_code)]
     fn write_str(&mut self, s: &str) -> fmt::Result {
         self.write_string(s);

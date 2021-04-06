@@ -9,12 +9,12 @@ mod screen;
 #[no_mangle]
 pub extern "C" fn _start() -> ! {
     println!("Welcome to Oxidize!!");
-
-    loop {}
+    panic!("Error!");
 }
 
 // This function is called on panic.
 #[panic_handler]
-fn panic(_info: &PanicInfo) -> ! {
+fn panic(info: &PanicInfo) -> ! {
+    println!("{}", info);
     loop {}
 }
